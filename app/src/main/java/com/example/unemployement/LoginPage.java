@@ -24,7 +24,7 @@ public class LoginPage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(LoginPage.this, MainActivity.class));
-                finish();
+                finishAffinity();
             }
         });
 

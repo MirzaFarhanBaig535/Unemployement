@@ -14,4 +14,22 @@
     <string name="confirm_password">Confirm Password</string>
     <string name="sign_up">Sign Up</string>
     <string name="already_a_member">Already a member?</string>
+    <string name="webinars_amp_workshops"><![CDATA[Webinars & Workshops]]></string>
+    <string name="see_all">See All</string>
+    <string name="programming">Programming</string>
+    <string name="get_started_with_python">Get Started with Python</string>
+    <string name="programming_name">Programming Name</string>
+    <string name="internships">Internships</string>
+    <string name="netflix_icon">Netflix Icon</string>
+    <string name="product_designer_ninternship">Product Designer\nInternship</string>
+    <string name="netflix_san_francisco">Netflix.San Francisco</string>
+    <string name="_2_months">2 Months</string>
+    <string name="google_logo">Google Logo</string>
+    <string name="backend_intern">Backend Intern</string>
+    <string name="google_wfh">Google . WFH</string>
+    <string name="_3_months">3 Months</string>
+    <string name="soft_skills">Soft Skills</string>
+    <string name="life_skill">Life Skill</string>
+    <string name="communication">Communication</string>
+    <string name="art_of_communication">Art of Communication</string>
 </resources>
