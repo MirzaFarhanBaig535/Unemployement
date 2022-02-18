@@ -6,9 +6,11 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import android.os.Bundle;
 
 import com.example.unemployement.Adapters.InternshipAdapter;
+import com.example.unemployement.Adapters.JobAdapter;
 import com.example.unemployement.Adapters.SkillAdapter;
 import com.example.unemployement.Adapters.WebinarAdapter;
 import com.example.unemployement.Models.InternshipModel;
+import com.example.unemployement.Models.JobModel;
 import com.example.unemployement.Models.SoftSkillModel;
 import com.example.unemployement.Models.WebinarModel;
 import com.example.unemployement.databinding.ActivityMainBinding;
@@ -26,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
 
     private ArrayList<SoftSkillModel> softSkillModels;
     private SkillAdapter skillAdapter;
+
+    private ArrayList<JobModel> jobModels;
+    private JobAdapter jobAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -79,5 +84,21 @@ public class MainActivity extends AppCompatActivity {
         LinearLayoutManager layoutManager2 = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         binding.SoftSkillList.setLayoutManager(layoutManager2);
         binding.SoftSkillList.setAdapter(skillAdapter);
+
+        int[] jobLogo = {R.drawable.netflix, R.drawable.google, R.drawable.flutter, R.drawable.amazon};
+        String[] jobTitle = {"Product Designer\nInternship", "Backend Intern", "Flutter Developer", "UX Designer"};
+        String[] jobLocation = {"Netflix.San Francisco", "Google.WFH", "Geetyan.WFH", "Amazon.WFH"};
+        String[] jobDuration = {"2 Months", "3 Months", "4 Months", "2 Months"};
+
+        jobModels = new ArrayList<>();
+        for (int i=0; i<jobLogo.length; i++){
+            JobModel model = new JobModel(jobLogo[i], jobTitle[i], jobLocation[i], jobDuration[i]);
+            jobModels.add(model);
+        }
+
+        jobAdapter = new JobAdapter(this, jobModels);
+        LinearLayoutManager layoutManager3 = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+        binding.JobsList.setLayoutManager(layoutManager3);
+        binding.JobsList.setAdapter(jobAdapter);
     }
 }
