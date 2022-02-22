@@ -17,7 +17,7 @@ import com.example.unemployement.databinding.ActivityMainBinding;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class HomeScreen extends AppCompatActivity {
 
     private ActivityMainBinding binding;
     private ArrayList<WebinarModel> models;
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         binding.WebinarList.setLayoutManager(layoutManager);
 
-        adapter = new WebinarAdapter(MainActivity.this, models);
+        adapter = new WebinarAdapter(HomeScreen.this, models);
         binding.WebinarList.setAdapter(adapter);
 
         int[] internLogo = {R.drawable.netflix, R.drawable.google, R.drawable.flutter, R.drawable.amazon};

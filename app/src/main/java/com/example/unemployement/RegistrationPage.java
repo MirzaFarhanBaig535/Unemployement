@@ -21,7 +21,7 @@ public class RegistrationPage extends AppCompatActivity {
         binding.SignUpBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(RegistrationPage.this, MainActivity.class));
+                startActivity(new Intent(RegistrationPage.this, HomeScreen.class));
                 finishAffinity();
             }
         });
