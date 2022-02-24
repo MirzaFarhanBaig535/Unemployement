@@ -60,7 +60,7 @@ public class WebinarsFragment extends Fragment implements  WebinarAdapter.ItemCl
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view =  inflater.inflate(R.layout.fragment_home, container, false);
+        View view =  inflater.inflate(R.layout.fragment_webinars, container, false);
         rcWebinars = view.findViewById(R.id.rc_webinars);
         rcWebinars.setLayoutManager(new LinearLayoutManager(this.getContext(),RecyclerView.VERTICAL,false));
 

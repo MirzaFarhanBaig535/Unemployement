@@ -1,28 +1,40 @@
 package com.example.unemployement.ui.Fragment;
 
+import android.app.ProgressDialog;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
+import com.example.unemployement.Adapters.JobAdapter;
+import com.example.unemployement.Adapters.WebinarAdapter;
+import com.example.unemployement.Api.ApiClient;
+import com.example.unemployement.Api.ApiInterface;
+import com.example.unemployement.Models.JobModel;
+import com.example.unemployement.Models.WehinarModel;
 import com.example.unemployement.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link InternshipFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
-public class InternshipFragment extends Fragment {
+import java.io.IOException;
+import java.util.ArrayList;
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+
+public class InternshipFragment extends Fragment {
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
+    private RecyclerView rcInternship;
+    private JobAdapter jobAdapter;
+
     private String mParam1;
     private String mParam2;
 
@@ -30,15 +42,6 @@ public class InternshipFragment extends Fragment {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment InternshipFragment.
-     */
-    // TODO: Rename and change types and number of parameters
     public static InternshipFragment newInstance(String param1, String param2) {
         InternshipFragment fragment = new InternshipFragment();
         Bundle args = new Bundle();
@@ -61,6 +64,53 @@ public class InternshipFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_internship, container, false);
+        View view = inflater.inflate(R.layout.fragment_internship, container, false);
+        rcInternship = view.findViewById(R.id.rv_Internship);
+        rcInternship.setLayoutManager(new LinearLayoutManager(this.getContext(),RecyclerView.VERTICAL,false));
+
+        loadRvInternship();
+        return view;
+    }
+
+    private void loadRvInternship() {
+        ProgressDialog progressDialog = new ProgressDialog(getContext());
+        progressDialog.setMessage("Getting your internships");
+        progressDialog.show();
+
+        ApiInterface apiInterface = ApiClient.getClient().create(ApiInterface.class);
+        Call<ArrayList<JobModel>> getInternships = apiInterface.getInternships();
+
+        getInternships.enqueue(new Callback<ArrayList<JobModel>>() {
+            @Override
+            public void onResponse(Call<ArrayList<JobModel>> call, Response<ArrayList<JobModel>> response) {
+                if (response.isSuccessful()) {
+                    progressDialog.hide();
+                    ArrayList<JobModel> value = response.body();
+                    setRv(value);
+                }
+                else {
+                    Toast.makeText(getContext(), "Server Error", Toast.LENGTH_SHORT).show();
+                }
+            }
+
+            @Override
+            public void onFailure(Call<ArrayList<JobModel>> call, Throwable t) {
+                progressDialog.hide();
+                if (t instanceof IOException) {
+
+                }
+                else {
+                    Log.e("Logs",t.toString());
+                }
+            }
+        });
+
+
+    }
+
+    private void setRv(ArrayList<JobModel> value) {
+        JobAdapter jobAdapter = new JobAdapter(getContext(),value);
+        rcInternship.setAdapter(jobAdapter);
+        jobAdapter.notifyDataSetChanged();
     }
 }
