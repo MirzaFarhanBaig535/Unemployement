@@ -29,13 +29,13 @@ public class WebinarDescActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_webinar_desc);
-        webinarthumbnail=findViewById(R.id.iv_web_thumbnail);
-        btnBack=findViewById(R.id.webback);
-        webinarCategory=findViewById(R.id.tv_webinarcardcategory);
+        webinarthumbnail=findViewById(R.id.iv_pdt_img);
+        btnBack=findViewById(R.id.webback1);
+        webinarCategory=findViewById(R.id.tv_cardcategory);
         webinarDesc=findViewById(R.id.webinardesc);
-        webinarDate=findViewById(R.id.tv_webinarcarddate);
-        webinarTitle=findViewById(R.id.tv_webinartitle);
-        webinarSpeaker=findViewById(R.id.tv_webinarcardspeaker);
+        webinarDate=findViewById(R.id.tv_carddate);
+        webinarTitle=findViewById(R.id.tv_cardtitle);
+        webinarSpeaker=findViewById(R.id.tv_cardspeaker);
 
 
         Intent intent = getIntent();

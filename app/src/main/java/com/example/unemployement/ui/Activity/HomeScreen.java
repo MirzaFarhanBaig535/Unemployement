@@ -109,9 +109,7 @@ public class HomeScreen extends AppCompatActivity {
         binding.JobsList.setAdapter(jobAdapterHomeScreen);
     }
 
-    public void gotooppotunities(View view) {
-        startActivity(new Intent(HomeScreen.this,MainActivity.class));
-    }
+
 
     @Override
     protected void onStart() {
@@ -125,5 +123,30 @@ public class HomeScreen extends AppCompatActivity {
     protected void onStop() {
         unregisterReceiver(networkChangeListener);
         super.onStop();
+    }
+
+    public void gotooppotunitieswebinar(View view) {
+        Intent intent = new Intent(HomeScreen.this, MainActivity.class);
+        intent.putExtra("category","Webinars");
+        startActivity(intent);
+    }
+
+    public void gotooppotunitiesInternship(View view) {
+        Intent intent = new Intent(HomeScreen.this, MainActivity.class);
+        intent.putExtra("category","Internships");
+        startActivity(intent);
+    }
+
+
+    public void gotooppotunitiessoft(View view) {
+        Intent intent = new Intent(HomeScreen.this, MainActivity.class);
+        intent.putExtra("category","Soft Skills");
+        startActivity(intent);
+    }
+
+    public void gotooppotunitiesJob(View view) {
+        Intent intent = new Intent(HomeScreen.this, MainActivity.class);
+        intent.putExtra("category","Jobs");
+        startActivity(intent);
     }
 }

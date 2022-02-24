@@ -55,7 +55,7 @@ public class SoftskillFragment extends Fragment {
         // Inflate the layout for this fragment
         View view =  inflater.inflate(R.layout.fragment_softskill, container, false);
 
-        resume = view.findViewById(R.id.cv_resume);
+        resume = view.findViewById(R.id.cv_cv);
         entrpreneur=view.findViewById(R.id.cv_entrepreneur);
 
         resume.setOnClickListener(new View.OnClickListener() {

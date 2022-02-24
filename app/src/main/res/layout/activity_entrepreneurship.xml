@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.unemployement.ui.Activity.WebinarDescActivity"
+    tools:context="com.example.unemployement.ui.Activity.EntrepreneurshipActivity"
     android:background="#fff">
 
     <ScrollView
@@ -23,7 +23,7 @@
                 android:layout_marginTop="@dimen/_10sdp">
 
                 <ImageView
-                    android:id="@+id/webback"
+                    android:id="@+id/enback"
                     android:layout_width="@dimen/_25sdp"
                     android:layout_height="@dimen/_25sdp"
                     android:layout_marginStart="@dimen/_12sdp"
@@ -36,7 +36,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_16sdp"
                     android:layout_marginTop="@dimen/_8sdp"
-                    android:layout_toRightOf="@+id/webback"
+                    android:layout_toRightOf="@+id/enback"
                     android:fontFamily="@font/poppins"
                     android:text="Back"
                     android:textColor="#333333"

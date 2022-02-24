@@ -31,7 +31,7 @@
             android:fontFamily="@font/poppins"
             android:text="@string/see_all"
             android:textSize="16sp"
-            android:onClick="gotooppotunities"
+            android:onClick="gotooppotunitieswebinar"
             app:layout_constraintBottom_toBottomOf="@+id/textView4"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/textView4" />
@@ -66,7 +66,7 @@
             android:fontFamily="@font/poppins"
             android:text="@string/see_all"
             android:textSize="16sp"
-            android:onClick="gotooppotunities"
+            android:onClick="gotooppotunitiesInternship"
             app:layout_constraintEnd_toEndOf="@+id/WebinarList"
             app:layout_constraintTop_toTopOf="@+id/textView9" />
 
@@ -97,7 +97,7 @@
             android:fontFamily="@font/poppins"
             android:text="@string/see_all"
             android:textSize="16sp"
-            android:onClick="gotooppotunities"
+            android:onClick="gotooppotunitiessoft"
             app:layout_constraintBottom_toBottomOf="@+id/textView11"
             app:layout_constraintEnd_toEndOf="@+id/InternshipList"
             app:layout_constraintTop_toTopOf="@+id/textView11" />
@@ -129,7 +129,7 @@
             android:text="@string/see_all"
             android:fontFamily="@font/poppins"
             android:textSize="16sp"
-            android:onClick="gotooppotunities"
+            android:onClick="gotooppotunitiesJob"
             app:layout_constraintTop_toTopOf="@id/textView13"
             app:layout_constraintEnd_toEndOf="@id/SoftSkillList"
             app:layout_constraintTop_toBottomOf="@id/textView13"/>
