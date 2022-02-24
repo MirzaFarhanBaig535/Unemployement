@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ui.Activity.CVbuiildingActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_proddesc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/cvback"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:src="@drawable/ic_left" />
+
+                <TextView
+                    android:id="@+id/tv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_toRightOf="@+id/cvback"
+                    android:fontFamily="@font/poppins"
+                    android:text="Back"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/_15sdp">
+
+                <TextView
+                    android:id="@+id/tv_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_toRightOf="@+id/webback"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="CV Building Guide"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/_18ssp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/BlackHead"
+                    android:fontFamily="@font/poppins"
+                    android:text="Employers use resumes throughout the hiring process to learn more about applicants and whether they might be a good fit. Your resume should be easy to read—summarise your accomplishments and skills and highlight relevant experience.">
+
+                </TextView>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_200sdp"
+                    android:src="@drawable/cv"
+                    android:scaleType="fitCenter">
+
+                </ImageView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_toRightOf="@+id/webback"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Resume Writing Tips To Help You Land a Job"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_toRightOf="@+id/webback"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="1. Look for keywords in the job postings"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/BlackHead"
+                    android:fontFamily="@font/poppins"
+                    android:text="Any entrepreneurship support program must have a clear mandate from its financiers, a clearly defined target group, tangible objectives for the program and a timeframe that ensures lasting improvement.">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_toRightOf="@+id/webback"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="2. Review resume examples for your industry
+"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/BlackHead"
+                    android:fontFamily="@font/poppins"
+                    android:text="When creating your resume, you could study examples of resumes from your industry for inspiration and best practices. While there are many ways you can use resume samples, there are three main takeaways you should look for: Make it simple and easy to read.">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_toRightOf="@+id/webback"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="3. Use a professional font"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/BlackHead"
+                    android:fontFamily="@font/poppins"
+                    android:text="Because employers have only a short time to review your resume, it should be as clear and as easy to read as possible. You should use a basic, clean font like Arial or Times New Roman. Keep your font size between 10 and 12 points. Selecting a clear, readable font will help make your resume appear more professional.">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_toRightOf="@+id/webback"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="4. Include only the most relevant information and put the most important information first"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/BlackHead"
+                    android:fontFamily="@font/poppins"
+                    android:text="While you might have extensive work or educational experience, it’s important to keep your resume as brief as possible without leaving out key information. Hiring managers don’t spend a lot of time reading each resume. Research has shown that hiring managers tend to spend only 6 seconds per resume. If your resume includes old or irrelevant information, such as jobs held over 10 years ago or minor degrees and achievements, it may distract from important information.">
+
+                </TextView>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

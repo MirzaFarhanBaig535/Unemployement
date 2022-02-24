@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.unemployement.ui.Activity.WebinarDescActivity"
+    android:background="#fff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_proddesc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/webback"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:src="@drawable/ic_left" />
+
+                <TextView
+                    android:id="@+id/tv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_toRightOf="@+id/webback"
+                    android:fontFamily="@font/poppins"
+                    android:text="Back"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_margin="@dimen/_15sdp">
+
+               <TextView
+                   android:id="@+id/tv_heading"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="@dimen/_8sdp"
+                   android:layout_toRightOf="@+id/webback"
+                   android:fontFamily="@font/poppins_bold"
+                   android:text="Entrepreneurship Support Program"
+                   android:textColor="#333333"
+                   android:textSize="@dimen/_18ssp"
+                   android:textStyle="bold" />
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="@dimen/_200sdp"
+                   android:src="@drawable/business"
+                   android:scaleType="fitCenter">
+
+               </ImageView>
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/BlackHead"
+                   android:fontFamily="@font/poppins"
+                   android:text="We collaborate with public and private sector entrepreneurship programs – which are helping more entrepreneurs to succeed.">
+
+               </TextView>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="@dimen/_8sdp"
+                   android:layout_toRightOf="@+id/webback"
+                   android:fontFamily="@font/poppins_bold"
+                   android:text="Key elements of succesful support programs"
+                   android:textColor="#333333"
+                   android:textSize="@dimen/_14ssp"
+                   android:textStyle="normal" />
+
+               <ImageView
+                   android:layout_width="@dimen/_60sdp"
+                   android:layout_height="@dimen/_60sdp"
+                   android:layout_gravity="left"
+                   android:src="@drawable/ic_baseline_objective"
+                   android:scaleType="fitCenter">
+
+               </ImageView>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="@dimen/_8sdp"
+                   android:layout_toRightOf="@+id/webback"
+                   android:fontFamily="@font/poppins_bold"
+                   android:text="Clear mandate and objectives"
+                   android:textColor="#333333"
+                   android:textSize="@dimen/_12ssp"
+                   android:textStyle="normal" />
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/BlackHead"
+                   android:fontFamily="@font/poppins"
+                   android:text="Any entrepreneurship support program must have a clear mandate from its financiers, a clearly defined target group, tangible objectives for the program and a timeframe that ensures lasting improvement.">
+
+               </TextView>
+
+               <ImageView
+                   android:layout_width="@dimen/_60sdp"
+                   android:layout_height="@dimen/_60sdp"
+                   android:layout_gravity="left"
+                   android:src="@drawable/ic_baseline_chat_24"
+                   android:scaleType="fitCenter">
+
+               </ImageView>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="@dimen/_8sdp"
+                   android:layout_toRightOf="@+id/webback"
+                   android:fontFamily="@font/poppins_bold"
+                   android:text="Competent advisors"
+                   android:textColor="#333333"
+                   android:textSize="@dimen/_12ssp"
+                   android:textStyle="normal" />
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/BlackHead"
+                   android:fontFamily="@font/poppins"
+                   android:text="The program must be managed by advisors who have a firm understanding of entrepreneurship theory, in addition to real-life entrepreneurial experience.">
+
+               </TextView>
+               <ImageView
+                   android:layout_width="@dimen/_60sdp"
+                   android:layout_height="@dimen/_60sdp"
+                   android:layout_gravity="left"
+                   android:src="@drawable/ic_baseline_laptop_24"
+                   android:scaleType="fitCenter">
+
+               </ImageView>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="@dimen/_8sdp"
+                   android:layout_toRightOf="@+id/webback"
+                   android:fontFamily="@font/poppins_bold"
+                   android:text="Digital support platfom"
+                   android:textColor="#333333"
+                   android:textSize="@dimen/_12ssp"
+                   android:textStyle="normal" />
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/BlackHead"
+                   android:fontFamily="@font/poppins"
+                   android:text="For entrepreneurship support to be accessible and structured over time, the methods must be available through an entrepreneurship management and e-learning system.">
+
+               </TextView>
+               <ImageView
+                   android:layout_width="@dimen/_60sdp"
+                   android:layout_height="@dimen/_60sdp"
+                   android:layout_gravity="left"
+                   android:src="@drawable/ic_baseline_search_24"
+                   android:scaleType="fitCenter">
+
+               </ImageView>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="@dimen/_8sdp"
+                   android:layout_toRightOf="@+id/webback"
+                   android:fontFamily="@font/poppins_bold"
+                   android:text="Data insights and statistics"
+                   android:textColor="#333333"
+                   android:textSize="@dimen/_12ssp"
+                   android:textStyle="normal" />
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/BlackHead"
+                   android:fontFamily="@font/poppins"
+                   android:text="To learn from and improve the program, the activities of the entrepreneurs and the results achieved must be measured in a well-designed analysis system.">
+
+               </TextView>
+
+           </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

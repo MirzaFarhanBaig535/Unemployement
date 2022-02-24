@@ -1,18 +1,22 @@
-package com.example.unemployement;
+package com.example.unemployement.ui.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ActivityOptions;
 import android.content.Intent;
+import android.content.IntentFilter;
+import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.util.Pair;
 import android.view.View;
 
 import com.example.unemployement.databinding.ActivityLoginPageBinding;
+import com.example.unemployement.utils.NetworkChangeListener;
 
 public class LoginPage extends AppCompatActivity {
 
     private ActivityLoginPageBinding binding;
+    private NetworkChangeListener networkChangeListener=new NetworkChangeListener();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,8 +27,8 @@ public class LoginPage extends AppCompatActivity {
         binding.SignInBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(LoginPage.this, MainActivity.class));
-                finish();
+                startActivity(new Intent(LoginPage.this, HomeScreen.class));
+                finishAffinity();
             }
         });
 
@@ -46,5 +50,18 @@ public class LoginPage extends AppCompatActivity {
                 startActivity(intent, options.toBundle());
             }
         });
+    }
+    @Override
+    protected void onStart() {
+        IntentFilter filter1=new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION);
+        registerReceiver(networkChangeListener,filter1);
+        super.onStart();
+    }
+
+
+    @Override
+    protected void onStop() {
+        unregisterReceiver(networkChangeListener);
+        super.onStop();
     }
 }

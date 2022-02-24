@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        app:cardBackgroundColor="#F8F8F8"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:id="@+id/JobLogo"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@string/netflix_icon"
+                android:src="@drawable/netflix" />
+
+            <TextView
+                android:id="@+id/JobTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/JobLogo"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/JobLogo"
+                android:fontFamily="@font/poppins"
+                android:text="@string/product_designer_ninternship"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/JobLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/JobTitle"
+                android:layout_alignStart="@id/JobTitle"
+                android:fontFamily="@font/poppins"
+                android:text="@string/netflix_san_francisco" />
+
+            <TextView
+                android:id="@+id/JobDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/JobTitle"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/corner_image"
+                android:padding="5dp"
+                android:text="@string/_2_months"
+                tools:ignore="RelativeOverlap" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

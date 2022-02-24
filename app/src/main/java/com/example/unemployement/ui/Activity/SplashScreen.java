@@ -1,4 +1,4 @@
-package com.example.unemployement;
+package com.example.unemployement.ui.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,6 +13,7 @@ import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 
+import com.example.unemployement.R;
 import com.example.unemployement.databinding.ActivitySplashScreenBinding;
 
 public class SplashScreen extends AppCompatActivity {
