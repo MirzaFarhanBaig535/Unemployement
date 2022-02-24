@@ -25,7 +25,7 @@
             android:layout_marginTop="@dimen/_5sdp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Join Our Cloud Counsealage Community"
+            android:text="Join Our Cloud Counselage Community"
             android:layout_gravity="center"
             android:textSize="@dimen/_12ssp"
             android:textStyle="bold"

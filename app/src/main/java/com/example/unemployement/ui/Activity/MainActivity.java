@@ -43,9 +43,6 @@ public class MainActivity extends AppCompatActivity implements CategoryAdapter.C
         CategoryAdapter categoryAdapter = new CategoryAdapter(MainActivity.this);
         categoryAdapter.setListener(this);
         mRcCategories.setAdapter(categoryAdapter);
-        Intent intent = getIntent();
-        categoryValue1=intent.getStringExtra("category");
-        Toast.makeText(getApplicationContext(),"hello"+categoryValue,Toast.LENGTH_SHORT).show();
 
         cvback=findViewById(R.id.mainback);
 
