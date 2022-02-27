@@ -19,17 +19,17 @@
            android:scaleType="centerCrop"
            android:src="@drawable/amazon" />
 
-        <TextView
-            android:id="@+id/tv_jobTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-medium"
-            android:text="Manager"
-            android:layout_toEndOf="@+id/iv_jobImage"
-            android:textSize="@dimen/_18sdp"
-            android:textColor="@color/black"
-            android:layout_marginStart="@dimen/_12ssp"
-            android:layout_marginTop="@dimen/_5sdp"/>
+       <TextView
+           android:id="@+id/tv_jobTitle"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="@dimen/_12ssp"
+           android:layout_marginTop="@dimen/_5sdp"
+           android:layout_toEndOf="@+id/iv_jobImage"
+           android:fontFamily="sans-serif-medium"
+           android:text="Manager"
+           android:textColor="@color/black"
+           android:textSize="@dimen/_15sdp" />
 
        <TextView
            android:id="@+id/tv_companyName"

@@ -40,7 +40,7 @@
         android:fontFamily="@font/poppins"
         android:text="Get Started with Python "
         android:textColor="@color/black"
-        android:textSize="@dimen/_15ssp"
+        android:textSize="@dimen/_12ssp"
         android:textStyle="bold" />
 
     <TextView
@@ -52,7 +52,7 @@
         android:layout_marginTop="@dimen/_5sdp"
         android:fontFamily="@font/poppins"
         android:text="by Pratik Kumar"
-        android:textSize="@dimen/_12ssp" />
+        android:textSize="@dimen/_10ssp" />
 
     <TextView
         android:id="@+id/tv_webinarcardcategory"
@@ -80,7 +80,7 @@
         android:fontFamily="@font/poppins"
         android:text="12 Feb 2022"
         android:textColor="#333333"
-        android:textSize="@dimen/_12ssp" />
+        android:textSize="@dimen/_10ssp" />
 
 
 

@@ -47,6 +47,7 @@ public class WebinarAdapter extends RecyclerView.Adapter<WebinarAdapter.WebinarV
         holder.mTvWebinarTitle.setText(data.getTitle());
         holder.mTvwebinardate.setText(String.valueOf(data.getDate()));
         holder.mTvcategory.setText(String.valueOf(data.getCatagory()));
+        holder.mtvspeaker.setText(String.valueOf(data.getSpeaker()));
 
 //        Image Loading
         Glide.with(this.context).load(data.getThumbnail()).into(holder.mIvwebinarImg);
@@ -71,7 +72,7 @@ public class WebinarAdapter extends RecyclerView.Adapter<WebinarAdapter.WebinarV
         private ImageView mIvwebinarImg;
         private TextView mTvWebinarTitle;
         private TextView mTvwebinardate;
-        private TextView mTvcategory;
+        private TextView mTvcategory,mtvspeaker;
 
         public WebinarViewHolder(@NonNull @NotNull View itemView) {
             super(itemView);
@@ -80,6 +81,7 @@ public class WebinarAdapter extends RecyclerView.Adapter<WebinarAdapter.WebinarV
             mTvWebinarTitle = itemView.findViewById(R.id.tv_webinartitle);
             mTvwebinardate = itemView.findViewById(R.id.tv_webinarcarddate);
             mTvcategory = itemView.findViewById(R.id.tv_webinarcardcategory);
+            mtvspeaker=itemView.findViewById(R.id.tv_webinarcardspeaker);
         }
     }
     public interface ItemClickListener {

@@ -11,6 +11,15 @@
         android:theme="@style/Theme.Unemployement"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".ui.Activity.ApplySuccessfull"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Activity.ApplyAcitivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Activity.JobDesc"
+            android:exported="false" />
+        <activity
             android:name=".JoinUs"
             android:exported="false" />
         <activity

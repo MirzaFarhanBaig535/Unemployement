@@ -109,5 +109,10 @@ public class MainActivity extends AppCompatActivity implements CategoryAdapter.C
         super.onStop();
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+    }
+
 
 }

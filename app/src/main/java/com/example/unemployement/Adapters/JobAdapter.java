@@ -1,5 +1,6 @@
 package com.example.unemployement.Adapters;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,12 +13,14 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.unemployement.Models.JobModel;
+import com.example.unemployement.Models.WehinarModel;
 import com.example.unemployement.R;
 
 import java.util.ArrayList;
 
 public class JobAdapter extends RecyclerView.Adapter<JobAdapter.JobViewHolder>{
 
+    private final ItemClickListener clickListener;
     private Context context;
     private ArrayList<JobModel> jobs;
 //    private WebinarAdapter.ItemClickListener clickListener;
@@ -28,9 +31,10 @@ public class JobAdapter extends RecyclerView.Adapter<JobAdapter.JobViewHolder>{
 //        this.clickListener = clickListener;
 //    }
 
-    public JobAdapter(Context context, ArrayList<JobModel> jobs) {
+    public JobAdapter(Context context, ArrayList<JobModel> jobs,ItemClickListener clickListener) {
         this.context = context;
         this.jobs = jobs;
+        this.clickListener = clickListener;
     }
 
 
@@ -41,7 +45,7 @@ public class JobAdapter extends RecyclerView.Adapter<JobAdapter.JobViewHolder>{
     }
 
     @Override
-    public void onBindViewHolder(@NonNull JobAdapter.JobViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull JobAdapter.JobViewHolder holder, @SuppressLint("RecyclerView") int position) {
         JobModel data = jobs.get(position);
 
         holder.mTvJobTitle.setText(data.getPosition());
@@ -52,12 +56,12 @@ public class JobAdapter extends RecyclerView.Adapter<JobAdapter.JobViewHolder>{
 //        Image Loading
         Glide.with(this.context).load(data.getThumbnail()).into(holder.mIvJobImg);
 
-//        holder.itemView.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                clickListener.onItemClick(webinar.get(position));
-//            }
-//        });
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                clickListener.onItemClick(jobs.get(position));
+            }
+        });
     }
 
     @Override
@@ -82,5 +86,9 @@ public class JobAdapter extends RecyclerView.Adapter<JobAdapter.JobViewHolder>{
             mTvJobCompany = itemView.findViewById(R.id.tv_companyName);
             mTvJobPlace = itemView.findViewById(R.id.tv_jobLocation);
         }
+    }
+
+    public interface ItemClickListener {
+        void onItemClick(JobModel job);
     }
 }

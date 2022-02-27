@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.unemployement.Models.JobModelHomeScreen;
+import com.example.unemployement.Models.WebinarModelHomeScreen;
 import com.example.unemployement.R;
 import com.example.unemployement.databinding.JobLayoutBinding;
 
@@ -18,10 +19,12 @@ public class JobAdapterHomeScreen extends RecyclerView.Adapter<JobAdapterHomeScr
 
     private Context mContext;
     private ArrayList<JobModelHomeScreen> models;
+    private final ItemClickListener clickListener;
 
-    public JobAdapterHomeScreen(Context mContext, ArrayList<JobModelHomeScreen> models) {
+    public JobAdapterHomeScreen(Context mContext, ArrayList<JobModelHomeScreen> models, JobAdapterHomeScreen.ItemClickListener clickListener) {
         this.mContext = mContext;
         this.models = models;
+        this.clickListener = clickListener;
     }
 
     @NonNull
@@ -51,5 +54,8 @@ public class JobAdapterHomeScreen extends RecyclerView.Adapter<JobAdapterHomeScr
             super(itemView);
             binding = JobLayoutBinding.bind(itemView);
         }
+    }
+    public interface ItemClickListener {
+        void onItemClick(JobModelHomeScreen job);
     }
 }

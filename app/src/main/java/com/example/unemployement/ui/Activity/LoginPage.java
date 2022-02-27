@@ -12,6 +12,7 @@ import android.view.View;
 
 import com.example.unemployement.databinding.ActivityLoginPageBinding;
 import com.example.unemployement.utils.NetworkChangeListener;
+import com.example.unemployement.utils.SessionManager;
 
 public class LoginPage extends AppCompatActivity {
 
@@ -64,4 +65,5 @@ public class LoginPage extends AppCompatActivity {
         unregisterReceiver(networkChangeListener);
         super.onStop();
     }
+
 }

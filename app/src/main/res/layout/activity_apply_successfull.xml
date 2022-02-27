@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg5"
+    android:gravity="center"
+    tools:context=".ui.Activity.ApplySuccessfull">
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:src="@drawable/successfull"
+            android:layout_gravity="center">
+
+        </ImageView>
+        <TextView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Successfully Applied"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="@dimen/_20ssp"
+            android:layout_gravity="center"
+            android:textColor="@color/Blue">
+
+        </TextView>
+
+        <TextView
+            android:layout_margin="@dimen/_20sdp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Application submitted, You will be notified soon with an Email"
+            android:fontFamily="@font/poppins"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/blue">
+
+        </TextView>
+
+        <Button
+            android:backgroundTint="@color/blue"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_12sdp"
+            android:textColor="@color/white"
+            android:onClick="gotohome"
+            android:text="Go Home">
+
+        </Button>
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

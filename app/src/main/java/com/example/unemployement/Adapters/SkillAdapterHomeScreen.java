@@ -15,9 +15,9 @@ import com.example.unemployement.databinding.SoftSkillLayoutBinding;
 import java.util.ArrayList;
 
 public class SkillAdapterHomeScreen extends RecyclerView.Adapter<SkillAdapterHomeScreen.SkillViewHolder> {
-
     private Context mContext;
     private ArrayList<SoftSkillModelHomeScreen> models;
+
 
     public SkillAdapterHomeScreen(Context mContext, ArrayList<SoftSkillModelHomeScreen> models) {
         this.mContext = mContext;

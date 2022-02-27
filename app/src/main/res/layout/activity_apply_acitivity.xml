@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/bg5"
+    tools:context="com.example.unemployement.ui.Activity.ApplyAcitivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_marginTop="25dp"
+        android:gravity="start">
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Apply Here"
+            android:textColor="@color/Blue"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/welcome"
+            android:layout_marginLeft="12dp"
+            android:fontFamily="sans-serif-black"
+            android:text="fill up the below details to get started"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/card_login_foreground"
+        android:elevation="35dp"
+        android:layout_weight="3">
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Application Form"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp" />
+
+        <ScrollView
+            android:layout_below="@+id/tv_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true">
+                <EditText
+                    android:gravity="center"
+                    android:id="@+id/et_username"
+                    android:padding="10dp"
+                    android:hint="Enter the Fullname"
+                    android:drawableTint="@color/black"
+                    android:inputType="text"
+                    android:textColorHint="@color/blue"
+                    android:drawableEnd="@drawable/ic_baseline_account_circle_24"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginRight="44dp"
+                    android:background="@drawable/edittextcard"/>
+                <EditText
+                    android:gravity="center"
+                    android:layout_marginTop="24dp"
+                    android:id="@+id/et_email"
+                    android:padding="10dp"
+                    android:hint="Enter the Email Id"
+                    android:drawableTint="@color/black"
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="@color/blue"
+                    android:drawableEnd="@drawable/ic_baseline_email_24"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginRight="44dp"
+                    android:background="@drawable/edittextcard"/>
+                <EditText
+                    android:gravity="center"
+                    android:id="@+id/et_password"
+                    android:layout_marginTop="24dp"
+                    android:padding="10dp"
+                    android:hint="LinkedIn Profile Link"
+                    android:drawableTint="@color/black"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/blue"
+                    android:drawableEnd="@drawable/ic_baseline_add_link_24"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginRight="44dp"
+                    android:background="@drawable/edittextcard"/>
+                <EditText
+                    android:gravity="center"
+                    android:id="@+id/et_confirmpassword"
+                    android:layout_marginTop="24dp"
+                    android:padding="10dp"
+                    android:hint="Github Profile Link"
+                    android:drawableTint="@color/black"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/blue"
+                    android:drawableEnd="@drawable/ic_baseline_add_link_24"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginRight="44dp"
+                    android:background="@drawable/edittextcard"/>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginRight="48dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="Need Help?"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginLeft="12dp"
+                        android:textSize="14dp"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-black"/>
+                    <Button
+                        android:id="@+id/register_button"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:backgroundTint="#fff"
+                        android:text="Apply"
+                        android:onClick="registerUser1"
+                        android:textColor="@color/blue">
+
+                    </Button>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:id="@+id/progressregister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_below="@+id/progressbar1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="Please wait!!, while we register you"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppins_bold"
+                        android:padding="5dp"
+                        android:text="Cancel the form?"
+                        android:textSize="15dp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"></TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Cancel"
+                        android:textStyle="bold"
+                        android:background="@color/white"
+                        android:textColor="@color/Blue"
+                        android:textSize="@dimen/_10sdp"
+                        android:onClick="movetohome"></TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,6 +1,7 @@
 package com.example.unemployement.ui.Fragment;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -14,10 +15,13 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.example.unemployement.Adapters.JobAdapter;
+import com.example.unemployement.Adapters.WebinarAdapter;
 import com.example.unemployement.Api.ApiClient;
 import com.example.unemployement.Api.ApiInterface;
 import com.example.unemployement.Models.JobModel;
 import com.example.unemployement.R;
+import com.example.unemployement.ui.Activity.JobDesc;
+import com.example.unemployement.ui.Activity.WebinarDescActivity;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -26,7 +30,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class JobsFragment extends Fragment {
+public class JobsFragment extends Fragment implements  JobAdapter.ItemClickListener {
 
 
     private static final String ARG_PARAM1 = "param1";
@@ -110,8 +114,23 @@ public class JobsFragment extends Fragment {
     }
 
     private void setRv(ArrayList<JobModel> value) {
-        JobAdapter jobAdapter = new JobAdapter(getContext(),value);
+        JobAdapter jobAdapter = new JobAdapter(getContext(),value,JobsFragment.this);
         rcJob.setAdapter(jobAdapter);
         jobAdapter.notifyDataSetChanged();
+    }
+
+    @Override
+    public void onItemClick(JobModel job) {
+        Intent intent = new Intent(getActivity(), JobDesc.class);
+        intent.putExtra("position",job.getPosition());
+        intent.putExtra("desc",job.getDesc());
+        intent.putExtra("duration",job.getDuration());
+        intent.putExtra("company",job.getCompany());
+        intent.putExtra("location",job.getLocation());
+        intent.putExtra("type",job.getType());
+        intent.putExtra("requirements",job.getRequirements());
+        intent.putExtra("thumbnail",job.getThumbnail());
+        startActivity(intent);
+
     }
 }

@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.unemployement.Models.WebinarModelHomeScreen;
+import com.example.unemployement.Models.WehinarModel;
 import com.example.unemployement.R;
 import com.example.unemployement.databinding.WebinarLayoutBinding;
 
@@ -18,10 +19,12 @@ public class WebinarAdapterHomeScreen extends RecyclerView.Adapter<WebinarAdapte
 
     private Context mContext;
     private ArrayList<WebinarModelHomeScreen> models;
+    private WebinarAdapter.ItemClickListener clickListener;
 
-    public WebinarAdapterHomeScreen(Context mContext, ArrayList<WebinarModelHomeScreen> models) {
+    public WebinarAdapterHomeScreen(Context mContext, ArrayList<WebinarModelHomeScreen> models, WebinarAdapter.ItemClickListener clickListener) {
         this.mContext = mContext;
         this.models = models;
+        this.clickListener = clickListener;
     }
 
     @NonNull
@@ -51,5 +54,9 @@ public class WebinarAdapterHomeScreen extends RecyclerView.Adapter<WebinarAdapte
             super(itemView);
             binding = WebinarLayoutBinding.bind(itemView);
         }
+    }
+
+    public interface ItemClickListener {
+        void onItemClick(WebinarModelHomeScreen webinar);
     }
 }

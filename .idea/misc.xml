@@ -23,13 +23,20 @@
         <entry key="..\:/Users/SWAUGAT/Unemployement/app/src/main/res/drawable-v24/item_selector.xml" value="0.3416666666666667" />
         <entry key="..\:/Users/SWAUGAT/Unemployement/app/src/main/res/drawable-v24/rounded_corner.xml" value="0.3416666666666667" />
         <entry key="..\:/Users/SWAUGAT/Unemployement/app/src/main/res/drawable-v24/title_box_unselected.xml" value="0.28177083333333336" />
+        <entry key="..\:/Users/SWAUGAT/Unemployement/app/src/main/res/drawable/bg5.xml" value="0.3769230769230769" />
         <entry key="..\:/Users/SWAUGAT/Unemployement/app/src/main/res/drawable/bg_category_webinar.xml" value="0.303125" />
         <entry key="..\:/Users/SWAUGAT/Unemployement/app/src/main/res/drawable/buttonbg.xml" value="0.2838541666666667" />
+        <entry key="..\:/Users/SWAUGAT/Unemployement/app/src/main/res/drawable/card_login_foreground.xml" value="0.3769230769230769" />
+        <entry key="..\:/Users/SWAUGAT/Unemployement/app/src/main/res/drawable/edittextcard.xml" value="0.3769230769230769" />
         <entry key="..\:/Users/SWAUGAT/Unemployement/app/src/main/res/drawable/ic_employee.xml" value="0.28177083333333336" />
         <entry key="..\:/Users/SWAUGAT/Unemployement/app/src/main/res/drawable/searchtext.xml" value="0.20052083333333334" />
+        <entry key="..\:/Users/SWAUGAT/Unemployement/app/src/main/res/drawable/successfull.xml" value="0.3769230769230769" />
+        <entry key="..\:/Users/SWAUGAT/Unemployement/app/src/main/res/layout/activity_apply_acitivity.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/SWAUGAT/Unemployement/app/src/main/res/layout/activity_apply_successfull.xml" value="0.35260416666666666" />
         <entry key="..\:/Users/SWAUGAT/Unemployement/app/src/main/res/layout/activity_cvbuiilding.xml" value="0.29375" />
         <entry key="..\:/Users/SWAUGAT/Unemployement/app/src/main/res/layout/activity_entrepreneurship.xml" value="0.3078125" />
         <entry key="..\:/Users/SWAUGAT/Unemployement/app/src/main/res/layout/activity_home_screen.xml" value="0.265625" />
+        <entry key="..\:/Users/SWAUGAT/Unemployement/app/src/main/res/layout/activity_job_desc.xml" value="0.25" />
         <entry key="..\:/Users/SWAUGAT/Unemployement/app/src/main/res/layout/activity_join_us.xml" value="0.259375" />
         <entry key="..\:/Users/SWAUGAT/Unemployement/app/src/main/res/layout/activity_login_page.xml" value="0.17831813576494426" />
         <entry key="..\:/Users/SWAUGAT/Unemployement/app/src/main/res/layout/activity_main.xml" value="0.33" />
@@ -37,12 +44,14 @@
         <entry key="..\:/Users/SWAUGAT/Unemployement/app/src/main/res/layout/activity_splash_screen.xml" value="0.184375" />
         <entry key="..\:/Users/SWAUGAT/Unemployement/app/src/main/res/layout/activity_webinar_desc.xml" value="0.25" />
         <entry key="..\:/Users/SWAUGAT/Unemployement/app/src/main/res/layout/cell_categories.xml" value="0.370018115942029" />
+        <entry key="..\:/Users/SWAUGAT/Unemployement/app/src/main/res/layout/cell_job.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/SWAUGAT/Unemployement/app/src/main/res/layout/check_internet_dialogue.xml" value="0.33645833333333336" />
         <entry key="..\:/Users/SWAUGAT/Unemployement/app/src/main/res/layout/fragment_assistance.xml" value="0.3338541666666667" />
         <entry key="..\:/Users/SWAUGAT/Unemployement/app/src/main/res/layout/fragment_home.xml" value="0.3338541666666667" />
         <entry key="..\:/Users/SWAUGAT/Unemployement/app/src/main/res/layout/fragment_internship.xml" value="0.3338541666666667" />
         <entry key="..\:/Users/SWAUGAT/Unemployement/app/src/main/res/layout/fragment_jobs.xml" value="0.31979166666666664" />
         <entry key="..\:/Users/SWAUGAT/Unemployement/app/src/main/res/layout/fragment_join_us.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/SWAUGAT/Unemployement/app/src/main/res/layout/fragment_settings.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/SWAUGAT/Unemployement/app/src/main/res/layout/fragment_softskill.xml" value="0.31979166666666664" />
         <entry key="..\:/Users/SWAUGAT/Unemployement/app/src/main/res/layout/fragment_webinars.xml" value="0.35104166666666664" />
         <entry key="..\:/Users/SWAUGAT/Unemployement/app/src/main/res/layout/internship_layout.xml" value="0.265625" />

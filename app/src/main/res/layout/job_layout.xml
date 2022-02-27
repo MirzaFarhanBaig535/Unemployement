@@ -38,7 +38,9 @@
                 android:layout_toEndOf="@id/JobLogo"
                 android:fontFamily="@font/poppins"
                 android:text="@string/product_designer_ninternship"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11ssp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/JobLocation"
@@ -47,7 +49,8 @@
                 android:layout_below="@id/JobTitle"
                 android:layout_alignStart="@id/JobTitle"
                 android:fontFamily="@font/poppins"
-                android:text="@string/netflix_san_francisco" />
+                android:text="@string/netflix_san_francisco"
+                android:textSize="@dimen/_10ssp" />
 
             <TextView
                 android:id="@+id/JobDuration"

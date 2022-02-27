@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.unemployement.ui.Activity.WebinarDescActivity"
     android:background="#fff">
 
@@ -129,7 +130,7 @@
                             android:layout_marginTop="@dimen/_8sdp"
                             android:layout_marginEnd="@dimen/_15sdp"
                             android:fontFamily="@font/poppins"
-                            android:text="If you want to learn how to write Python programs like a pro, code python like a boss, solve real-world problems, or automate repetitive and complex tasks, read on. By the end of this course you will be able to create Python scripts with ease. You'll learn how to take tedious and repetitious tasks and turn them into programs that will save you time and simplify your life on Linux, Unix, or MAC systems.If you want to learn how to write Python programs like a pro, code python like a boss, solve real-world problems, or automate repetitive and complex tasks, read on. By the end of this course you will be able to create Python scripts with ease. You'll learn how to take tedious and repetitious tasks and turn them into programs that will save you time and simplify your life on Linux, Unix, or MAC systems."
+                            android:text=" create Python scripts with ease. You'll learn how programs that will save you time and simplify your life on Linux, Unix, or MAC systems.If you want to learn how to write Python programs like a pro, code python like a boss, solve real-world problems, or automate repetitive and complex tasks, read on. By the end of this course you will be able to create Python scripts with ease. You'll learn how to take tedious and repetitious tasks and turn them into programs that will save you time and simplify your life on Linux, Unix, or MAC systems."
                             android:textColor="#000000" />
 
 
@@ -146,18 +147,31 @@
         </RelativeLayout>
     </ScrollView>
 
-    <Button
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:id="@+id/addtocardlayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
         android:layout_gravity="bottom"
         android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:id="@+id/btn_reg_webinar"
-        android:layout_width="@dimen/_100sdp"
-        android:layout_height="@dimen/_40sdp"
-        android:backgroundTint="@color/Blue"
-        android:fontFamily="@font/poppins"
-        android:text="Register"
-        android:textColor="@color/white"
-        android:textSize="@dimen/_10ssp" />
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_10sdp">
+
+        <Button
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/btn_applywebniar"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/Blue"
+            android:fontFamily="@font/poppins"
+            android:text="Apply"
+            android:onClick="onApplyWebinar"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+    </LinearLayout>
 
 
 
@@ -167,4 +181,4 @@
 
 
 
-</RelativeLayout>
+</LinearLayout>
